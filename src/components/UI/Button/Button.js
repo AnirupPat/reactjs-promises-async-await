@@ -3,6 +3,7 @@ import BasicPromise from "../../../methods/BasicPromise";
 import ErrorPromise from "../../../methods/ErrorPromise";
 import CatchPromise from "../../../methods/CatchPromise";
 import FinallyPromise from "../../../methods/FinallyPromise";
+import BasicCallback from "../../../methods/BasicCallback";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -14,6 +15,8 @@ const Button = (props) => {
         CatchPromise();
     } else if(props.title === "Finally Promise") {
         FinallyPromise();
+    } else if(props.title === "Basic Callback") {
+        BasicCallback();
     }
   };
   return (

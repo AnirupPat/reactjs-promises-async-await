@@ -6,7 +6,7 @@ const FinallyPromise = () => {
     });
 
     promise.then(result => alert(result))
-        .finally(alert("finally executed!"))
+        .finally(() => alert("finally executed!"))
 }
 
 export default FinallyPromise;
