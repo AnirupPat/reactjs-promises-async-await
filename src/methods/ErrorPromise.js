@@ -1,13 +1,13 @@
 const ErrorPromise = () => {
   let promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject("error received !!");
+      reject(new Error("error received !!"));
     }, 1000);
   });
 
   promise.then(
     (result) => alert(result),
-    (error) => alert(error)
+    (error) => alert(error.message)
   );
 };
 

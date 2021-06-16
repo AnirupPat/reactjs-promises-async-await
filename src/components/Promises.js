@@ -5,6 +5,8 @@ const Promises = () => {
         <div>
         <Button title="Success Promise" />
         <Button title="Error Promise" />
+        <Button title="Catch Promise" />
+        
         </div>
         
     );
