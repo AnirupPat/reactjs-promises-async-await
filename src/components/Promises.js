@@ -2,7 +2,7 @@ import Button from "./UI/Button/Button";
 
 const Promises = () => {
     return (
-        <Button title="Promise" />
+        <Button title="Success Promise" />
     );
 }
 
