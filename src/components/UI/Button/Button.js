@@ -2,6 +2,7 @@ import classes from "./Button.module.css";
 import BasicPromise from "../../../methods/BasicPromise";
 import ErrorPromise from "../../../methods/ErrorPromise";
 import CatchPromise from "../../../methods/CatchPromise";
+import FinallyPromise from "../../../methods/FinallyPromise";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -11,8 +12,9 @@ const Button = (props) => {
         ErrorPromise();
     } else if(props.title === "Catch Promise") {
         CatchPromise();
+    } else if(props.title === "Finally Promise") {
+        FinallyPromise();
     }
-    
   };
   return (
     <button onClick={onClickhandler} className={classes.button}>
