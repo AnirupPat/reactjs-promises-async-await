@@ -20,6 +20,7 @@ const Promises = () => {
       <Button title="Promise All Fetch" />
       <Button title="Complex Promise All Fetch" />
       <Button title="Promise All Rejection" />
+      <Button title="Promise All Settled" />
     </div>
   );
 };
