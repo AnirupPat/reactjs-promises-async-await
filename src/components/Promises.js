@@ -15,6 +15,7 @@ const Promises = () => {
         <Button title="Error Handle Promise Chaining" />
         <Button title="Then After Catch Promise Call" />
         <Button title="Error Rethrown Promise Call" />
+        <Button title="Unhandled Rejections Promise" />
         </div>
         
     );

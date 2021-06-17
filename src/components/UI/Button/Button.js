@@ -11,7 +11,7 @@ import ReturningPromises from "../../../methods/ReturningPromises";
 import ErrorHandlePromiseChaining from "../../../methods/ErrorHandlePromiseChaining";
 import ThenAfterCatchPromiseCall from "../../../methods/ThenAfterCatchPromiseCall";
 import ErrorRethrownPromiseCall from "../../../methods/ErrorRethrownPromiseCall";
-
+import UnhandledRejections from "../../../methods/UnhandledRejections";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -39,6 +39,8 @@ const Button = (props) => {
         ThenAfterCatchPromiseCall();
     } else if(props.title === "Error Rethrown Promise Call") {
         ErrorRethrownPromiseCall();
+    } else if(props.title === "Unhandled Rejections Promise") {
+        UnhandledRejections();
     }
   };
   return (
