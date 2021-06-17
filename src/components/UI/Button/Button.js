@@ -9,6 +9,7 @@ import ErrorCallback from "../../../methods/ErrorCallback";
 import PromiseChaining from "../../../methods/PromiseChaining";
 import ReturningPromises from "../../../methods/ReturningPromises";
 import ErrorHandlePromiseChaining from "../../../methods/ErrorHandlePromiseChaining";
+import ThenAfterCatchPromiseCall from "../../../methods/ThenAfterCatchPromiseCall";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -32,6 +33,8 @@ const Button = (props) => {
         ReturningPromises();
     } else if(props.title === "Error Handle Promise Chaining") {
         ErrorHandlePromiseChaining();
+    } else if(props.title === "Then After Catch Promise Call") {
+        ThenAfterCatchPromiseCall();
     }
   };
   return (

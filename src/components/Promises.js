@@ -13,6 +13,7 @@ const Promises = () => {
         <Button title="Promise Chaining" />
         <Button title="Returning Promises" />
         <Button title="Error Handle Promise Chaining" />
+        <Button title="Then After Catch Promise Call" />
         </div>
         
     );
