@@ -17,6 +17,7 @@ import PromiseAllFetch from "../../../methods/PromiseAllFetch";
 import ComplexPromiseAllFetch from "../../../methods/ComplexPromiseAllFetch";
 import PromiseAllRejection from "../../../methods/PromiseAllRejection";
 import PromiseAllSettled from "../../../methods/PromiseAllSettled";
+import PromiseRace from "../../../methods/PromiseRace";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -56,6 +57,8 @@ const Button = (props) => {
         PromiseAllRejection();
     } else if(props.title === "Promise All Settled") {
         PromiseAllSettled();
+    } else if(props.title === "Promise Race") {
+        PromiseRace();
     }
   };
   return (
