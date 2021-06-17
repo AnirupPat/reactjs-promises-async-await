@@ -6,6 +6,8 @@ import FinallyPromise from "../../../methods/FinallyPromise";
 import BasicCallback from "../../../methods/BasicCallback";
 import CallbackInCallback from "../../../methods/CallbackInCallback";
 import ErrorCallback from "../../../methods/ErrorCallback";
+import PromiseChaining from "../../../methods/PromiseChaining";
+import ReturningPromises from "../../../methods/ReturningPromises";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -23,6 +25,10 @@ const Button = (props) => {
         CallbackInCallback();
     } else if(props.title === "Error in Callback") {
         ErrorCallback();
+    } else if(props.title === "Promise Chaining") {
+        PromiseChaining();
+    } else if(props.title === "Returning Promises") {
+        ReturningPromises();
     }
   };
   return (
