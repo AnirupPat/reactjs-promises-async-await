@@ -9,6 +9,7 @@ const Promises = () => {
         <Button title="Finally Promise" />
         <Button title="Basic Callback" />
         <Button title="Callback in Callback" />
+        <Button title="Error in Callback" />
         </div>
         
     );
