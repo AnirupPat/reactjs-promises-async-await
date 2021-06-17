@@ -10,6 +10,8 @@ import PromiseChaining from "../../../methods/PromiseChaining";
 import ReturningPromises from "../../../methods/ReturningPromises";
 import ErrorHandlePromiseChaining from "../../../methods/ErrorHandlePromiseChaining";
 import ThenAfterCatchPromiseCall from "../../../methods/ThenAfterCatchPromiseCall";
+import ErrorRethrownPromiseCall from "../../../methods/ErrorRethrownPromiseCall";
+
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -35,6 +37,8 @@ const Button = (props) => {
         ErrorHandlePromiseChaining();
     } else if(props.title === "Then After Catch Promise Call") {
         ThenAfterCatchPromiseCall();
+    } else if(props.title === "Error Rethrown Promise Call") {
+        ErrorRethrownPromiseCall();
     }
   };
   return (
