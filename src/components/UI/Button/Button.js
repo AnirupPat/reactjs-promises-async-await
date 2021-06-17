@@ -14,6 +14,7 @@ import ErrorRethrownPromiseCall from "../../../methods/ErrorRethrownPromiseCall"
 import UnhandledRejections from "../../../methods/UnhandledRejections";
 import BasicPromiseAll from "../../../methods/BasicPromiseAll";
 import PromiseAllFetch from "../../../methods/PromiseAllFetch";
+import ComplexPromiseAllFetch from "../../../methods/ComplexPromiseAllFetch";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -47,6 +48,8 @@ const Button = (props) => {
         BasicPromiseAll();
     } else if(props.title === "Promise All Fetch") {
         PromiseAllFetch();
+    } else if(props.title === "Complex Promise All Fetch") {
+        ComplexPromiseAllFetch();
     }
   };
   return (
