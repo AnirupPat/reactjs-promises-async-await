@@ -22,6 +22,8 @@ const Promises = () => {
       <Button title="Promise All Rejection" />
       <Button title="Promise All Settled" />
       <Button title="Promise Race" />
+      <Button title="Promise Any" />
+      <Button title="PromiseAnyAggregateError" />
     </div>
   );
 };

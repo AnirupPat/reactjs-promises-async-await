@@ -18,6 +18,8 @@ import ComplexPromiseAllFetch from "../../../methods/ComplexPromiseAllFetch";
 import PromiseAllRejection from "../../../methods/PromiseAllRejection";
 import PromiseAllSettled from "../../../methods/PromiseAllSettled";
 import PromiseRace from "../../../methods/PromiseRace";
+import PromiseAny from "../../../methods/PromiseAny";
+import PromiseAnyAggregateError from "../../../methods/PromiseAnyAggregateError";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -59,6 +61,10 @@ const Button = (props) => {
         PromiseAllSettled();
     } else if(props.title === "Promise Race") {
         PromiseRace();
+    } else if(props.title === "Promise Any") {
+        PromiseAny();
+    } else if(props.title === "PromiseAnyAggregateError") {
+        PromiseAnyAggregateError();
     }
   };
   return (
