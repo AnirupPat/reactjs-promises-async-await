@@ -12,6 +12,7 @@ const Promises = () => {
         <Button title="Error in Callback" />
         <Button title="Promise Chaining" />
         <Button title="Returning Promises" />
+        <Button title="Error Handle Promise Chaining" />
         </div>
         
     );

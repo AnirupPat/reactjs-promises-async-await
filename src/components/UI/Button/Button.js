@@ -8,6 +8,7 @@ import CallbackInCallback from "../../../methods/CallbackInCallback";
 import ErrorCallback from "../../../methods/ErrorCallback";
 import PromiseChaining from "../../../methods/PromiseChaining";
 import ReturningPromises from "../../../methods/ReturningPromises";
+import ErrorHandlePromiseChaining from "../../../methods/ErrorHandlePromiseChaining";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -29,6 +30,8 @@ const Button = (props) => {
         PromiseChaining();
     } else if(props.title === "Returning Promises") {
         ReturningPromises();
+    } else if(props.title === "Error Handle Promise Chaining") {
+        ErrorHandlePromiseChaining();
     }
   };
   return (
