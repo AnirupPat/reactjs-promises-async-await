@@ -17,6 +17,7 @@ const Promises = () => {
       <Button title="Error Rethrown Promise Call" />
       <Button title="Unhandled Rejections Promise" />
       <Button title="Basic Promise All" />
+      <Button title="Promise All Fetch" />
     </div>
   );
 };

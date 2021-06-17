@@ -13,6 +13,7 @@ import ThenAfterCatchPromiseCall from "../../../methods/ThenAfterCatchPromiseCal
 import ErrorRethrownPromiseCall from "../../../methods/ErrorRethrownPromiseCall";
 import UnhandledRejections from "../../../methods/UnhandledRejections";
 import BasicPromiseAll from "../../../methods/BasicPromiseAll";
+import PromiseAllFetch from "../../../methods/PromiseAllFetch";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -44,6 +45,8 @@ const Button = (props) => {
         UnhandledRejections();
     } else if(props.title === "Basic Promise All") {
         BasicPromiseAll();
+    } else if(props.title === "Promise All Fetch") {
+        PromiseAllFetch();
     }
   };
   return (
