@@ -27,6 +27,7 @@ const Promises = () => {
       <Button title="Basic Async" />
       <Button title="Basic Async Await" />
       <Button title="Async Class Method" />
+      <Button title="Async Await Error Handling" />
     </div>
   );
 };
