@@ -22,6 +22,7 @@ import PromiseAny from "../../../methods/PromiseAny";
 import PromiseAnyAggregateError from "../../../methods/PromiseAnyAggregateError";
 import BasicAsync from "../../../methods/BasicAsync";
 import BasicAsyncAwait from "../../../methods/BasicAsyncAwait";
+import AsyncClassMethod from "../../../methods/AsyncClassMethod";
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -71,6 +72,8 @@ const Button = (props) => {
         BasicAsync();
     } else if(props.title === "Basic Async Await") {
         BasicAsyncAwait();
+    } else if(props.title === "Async Class Method") {
+        AsyncClassMethod();
     }
   };
   return (

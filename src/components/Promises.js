@@ -26,6 +26,7 @@ const Promises = () => {
       <Button title="PromiseAnyAggregateError" />
       <Button title="Basic Async" />
       <Button title="Basic Async Await" />
+      <Button title="Async Class Method" />
     </div>
   );
 };
