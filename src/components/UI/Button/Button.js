@@ -20,6 +20,8 @@ import PromiseAllSettled from "../../../methods/PromiseAllSettled";
 import PromiseRace from "../../../methods/PromiseRace";
 import PromiseAny from "../../../methods/PromiseAny";
 import PromiseAnyAggregateError from "../../../methods/PromiseAnyAggregateError";
+import BasicAsync from "../../../methods/BasicAsync";
+
 
 const Button = (props) => {
   const onClickhandler = () => {
@@ -65,6 +67,8 @@ const Button = (props) => {
         PromiseAny();
     } else if(props.title === "PromiseAnyAggregateError") {
         PromiseAnyAggregateError();
+    } else if(props.title === "Basic Async") {
+        BasicAsync();
     }
   };
   return (
